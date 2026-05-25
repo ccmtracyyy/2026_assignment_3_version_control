@@ -1,0 +1,20 @@
+For instructor:
+
+Get all files into place by copying bin from last year
+Copy/paste class list into "bin/student_list.txt"
+mkdir data
+cd data
+../bin/generate.sh
+cd ..
+cp -r data original_data
+
+mkdir docs
+../bin/generate_docs.sh
+
+Perform a checkin 
+
+Run ./bin/mutate_files.sh data/*
+
+
+git checkout -b stable
+git push --set-upstream origin stable
